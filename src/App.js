@@ -14,7 +14,7 @@ import { MuiThemeProvider, Typography } from "@material-ui/core";
 function App() {
   let theme = createMuiTheme({
     typography: {
-      fontFamily: '"Helvetica Neue"',
+      fontFamily:  '"Segoe UI"',
     },
   });
   theme = responsiveFontSizes(theme);
@@ -23,30 +23,21 @@ function App() {
     <MuiThemeProvider theme={theme}>
       <div className="App">
         <Switch>
-          <Route path="/login">
+          <Route path="/home">
             <Header></Header>
             <Dashboard></Dashboard>
             <Footer></Footer>
           </Route>
-          <Route path="/edit">
-            <Header></Header>
-            <Edit></Edit>
-            <Footer></Footer>
-          </Route>
+
           <Route path="/2048">
             <Header></Header>
             <Game2048></Game2048>
             <Footer></Footer>
           </Route>
 
-          <Route path="/testing">
-            {" "}
-            <Header></Header>
-            <Testing />
-          </Route>
 
           <Route exact path="/">
-            <Redirect to="/login" />
+            <Redirect to="/home" />
           </Route>
         </Switch>
       </div>

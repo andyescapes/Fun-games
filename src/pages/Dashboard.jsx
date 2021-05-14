@@ -9,37 +9,33 @@ import QuestionCard from "../components/QuestionCard";
 import { Typography } from "@material-ui/core";
 
 function Dashboard() {
-  const [quiz, setQuiz] = React.useState([
-    { name: "cool quiz", duration: 12, image: "" },
-    { name: "amazing quiz", duration: 12, image: "" },
-  ]);
+
 
   const useStyles = makeStyles({
     boxStyle: {
-      height: "90px",
+      margin: "auto",
     },
   });
 
   const classes = useStyles();
   return (
     <>
-      <Typography variant={"h1"}>lol</Typography>
-      <Typography variant={"body"}>lasdfasfasdfasfasfdol</Typography>
-      <Grid container spacing={2}>
+      <Box mt ={5}>
+
+      
+      <Typography variant={"h1"} gutterBottom>Game Centre</Typography>
+      <Grid container spacing={4}>
         <Grid item sm={2} xs={1}></Grid>
         <Grid item sm={8} xs={10}>
-          <Grid container spacing={2}>
-            {quiz.map((item) => {
-              return (
-                <Grid item md={4}>
-                  <QuestionCard></QuestionCard>
-                </Grid>
-              );
-            })}
-          </Grid>
+
+            <Typography variant = "h4">
+              Hello, please play some games during your stay. I have developed a react tictactoe and 2048 game for you!
+            </Typography>
+
         </Grid>
         <Grid item sm={2} xs={1}></Grid>
       </Grid>
+</Box>
     </>
   );
 }

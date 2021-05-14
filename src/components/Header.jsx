@@ -20,25 +20,15 @@ function Header() {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Button color="inherit">Log Out</Button>
+
         <Box ml={1}>
           <Button
             onClick={() => {
-              history.push("/edit");
+              history.push("/home");
             }}
             color="inherit"
           >
-            Edit Page
-          </Button>
-        </Box>
-        <Box ml={1}>
-          <Button
-            onClick={() => {
-              history.push("/login");
-            }}
-            color="inherit"
-          >
-            Dashboard
+            Home
           </Button>
         </Box>
         <Box ml={1}>
@@ -51,16 +41,7 @@ function Header() {
             2048
           </Button>
         </Box>
-        <Box ml={1}>
-          <Button
-            onClick={() => {
-              history.push("/testing");
-            }}
-            color="inherit"
-          >
-            Testing
-          </Button>
-        </Box>
+      
       </Toolbar>
     </AppBar>
   );

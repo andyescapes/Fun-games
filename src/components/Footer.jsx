@@ -28,10 +28,10 @@ function Footer() {
   const classes = useStyles();
   return (
     <div>
-      <Box color="white">
+      <Box mt={4}>
         <Grid container spacing={5} className={classes.boxStyle}>
           <Grid item sm={2} xs={4}>
-            <Box>Big Brain</Box>
+            <Box>Game Centre</Box>
           </Grid>
           <Grid item sm={8} xs={4}></Grid>
           <Grid item sm={2} xs={4}>
