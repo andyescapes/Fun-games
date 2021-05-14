@@ -20,7 +20,6 @@ function Header() {
   return (
     <AppBar position="static">
       <Toolbar>
-
         <Box ml={1}>
           <Button
             onClick={() => {
@@ -41,7 +40,16 @@ function Header() {
             2048
           </Button>
         </Box>
-      
+        <Box ml={1}>
+          <Button
+            onClick={() => {
+              history.push("/tictactoe");
+            }}
+            color="inherit"
+          >
+            Tictactoe
+          </Button>
+        </Box>
       </Toolbar>
     </AppBar>
   );

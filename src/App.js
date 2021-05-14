@@ -2,6 +2,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Dashboard from "./pages/Dashboard";
 import Game2048 from "./pages/Game2048";
+import {Tictactoe} from "./pages/Tictactoe";
 import { Testing } from "./pages/Testing";
 import "./App.css";
 import Grid from "@material-ui/core/Grid";
@@ -32,6 +33,11 @@ function App() {
           <Route path="/2048">
             <Header></Header>
             <Game2048></Game2048>
+            <Footer></Footer>
+          </Route>
+          <Route path="/tictactoe">
+            <Header></Header>
+            <Tictactoe></Tictactoe>
             <Footer></Footer>
           </Route>
 
