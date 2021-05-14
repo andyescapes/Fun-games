@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Welcome to some React JS Games
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have coded tictactoe and 2048 using react, use yarn start to run the web app locally.
 
 ## Available Scripts
 
